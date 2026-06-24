@@ -6,29 +6,14 @@
 <title>iPAS AI應用規劃師題庫系統</title>
 
 <style>
-<body>
+body{
+    font-family:"Microsoft JhengHei";
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+    background:#f5f5f5;
+}
 
-<h1>iPAS AI應用規劃師測驗系統</h1>
-
-<p>目前題庫：AI基礎概論示範版</p>
-
-<button onclick="startExam()"> 開始測驗 </button>
-
-<button onclick="submitExam()"> 交卷 </button>
-
-<hr>
-
-<div id="score"></div>
-
-<div id="exam"></div>
-
-<div id="review"></div>
-
-<script src="questionBank.js"></script>
-
-<script src="app.js"></script>
-
-</body>
 h1{
     text-align:center;
 }
@@ -55,27 +40,22 @@ h1{
 
 <h1>iPAS AI應用規劃師測驗系統</h1>
 
-<div class="card">
-
-<h2>測驗功能</h2>
-
-<button class="btn">
-科目一－人工智慧基礎概論
+<button onclick="startExam()">
+開始測驗
 </button>
 
-<button class="btn">
-科目二－生成式AI應用與規劃
+<button onclick="submitExam()">
+交卷
 </button>
 
-<button class="btn">
-綜合模擬考
-</button>
+<div id="score"></div>
 
-<button class="btn">
-錯題複習
-</button>
+<div id="exam"></div>
 
-</div>
+<div id="review"></div>
+
+<script src="questionBank.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
